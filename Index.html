@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style.css" />
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset class="fieldset-one">
+        <legend>Loan amount</legend>
+        <span>₹</span>
+        <input
+          type="number"
+          class="loan-amount-input"
+          placeholder="0"
+          value="50000"
+        />
+      </fieldset>
+      <fieldset class="fieldset-two">
+        <legend>Loan term</legend>
+        <span>Years</span>
+        <input
+          type="number"
+          class="loan-term-input"
+          placeholder="0"
+          value="2"
+        />
+      </fieldset>
+      <fieldset class="fieldset-three">
+        <legend>Interest rate</legend>
+        <span>%</span>
+        <input
+          type="number"
+          class="interest-rate-input"
+          placeholder="0"
+          value="6"
+        />
+      </fieldset>
+      <button type="button" class="calculate-btn">Calculate</button>
+      <div class="result-div">
+        <table>
+          <tr>
+            <td>Loan amount</td>
+            <td class="loan-amount">₹50000</td>
+          </tr>
+          <tr>
+            <td>Monthly EMI</td>
+            <td class="emi-amount">₹2216.03</td>
+          </tr>
+          <tr>
+            <td>Interest payable</td>
+            <td class="interest-rate">₹3184.73</td>
+          </tr>
+          <tr>
+            <td>Total payable</td>
+            <td class="total-amount">₹53184.73</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./Javascript.js"></script>
+  </body>
+</html>
